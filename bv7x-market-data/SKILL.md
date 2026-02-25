@@ -1,6 +1,17 @@
 ---
 name: bv7x-market-data
 description: Access live Bitcoin market context and crowd-vs-oracle comparison data. Use when the user wants BTC price, Fear & Greed, RSI, ETF flows, DXY, MA200 distance, or Polymarket crowd sentiment compared against BV-7X's oracle predictions.
+triggers:
+  - bitcoin price
+  - btc market data
+  - fear and greed
+  - etf flows
+  - crowd vs oracle
+  - polymarket bitcoin
+metadata:
+  clawdbot:
+    emoji: "^"
+    homepage: https://bv7x.ai
 ---
 
 # BV-7X Market Data

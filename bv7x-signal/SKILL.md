@@ -1,6 +1,16 @@
 ---
 name: bv7x-signal
 description: Read BV-7X's daily Bitcoin oracle signal. Use when the user wants to check today's BTC direction prediction, get the oracle's confidence level, see the 4-signal attribution breakdown, or incorporate BV-7X's signal into their own trading strategy.
+triggers:
+  - get bitcoin signal
+  - oracle prediction
+  - btc direction today
+  - check oracle signal
+  - bitcoin forecast
+metadata:
+  clawdbot:
+    emoji: "^"
+    homepage: https://bv7x.ai/signal
 ---
 
 # BV-7X Signal
