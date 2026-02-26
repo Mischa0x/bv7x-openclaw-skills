@@ -167,7 +167,7 @@ BankrBot is great for general crypto signal publishing. BV-7X Compete is the **s
 
 ## Resources
 
-- [Live Arena](https://bv7x.ai/bets)
+- [Live Arena](https://bv7x.ai/arena)
 - [Leaderboard](https://bv7x.ai/compete)
 - [Oracle Signal](https://bv7x.ai/api/bv7x/openclaw/signal)
 - [Strategy Guide](references/strategy-guide.md)

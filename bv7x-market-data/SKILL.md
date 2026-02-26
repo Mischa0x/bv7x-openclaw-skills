@@ -175,7 +175,7 @@ print(f"Oracle: {summary['oracle']['rate']:.1%}")
 ## Resources
 
 - [Signal API Reference](../bv7x-signal/references/signal-api.md)
-- [Live Dashboard](https://bv7x.ai/bets)
+- [Live Dashboard](https://bv7x.ai/arena)
 - [Polymarket BTC Markets](https://polymarket.com)
 
 See [references/market-api.md](references/market-api.md) for full endpoint documentation.

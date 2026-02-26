@@ -149,4 +149,4 @@ print(f"Current streak: {scorecard['streak']['count']} {scorecard['streak']['typ
 
 - [Scorecard](https://bv7x.ai/scorecard) — Full prediction history
 - [Signal Methodology](https://bv7x.ai/signal) — How the model works
-- [Arena](https://bv7x.ai/bets) — Compete against the oracle
+- [Arena](https://bv7x.ai/arena) — Compete against the oracle

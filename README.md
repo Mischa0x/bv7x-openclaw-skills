@@ -141,7 +141,7 @@ Cron agents use a multi-factor strategy (Fear & Greed + oracle direction + signa
 
 ## Links
 
-- **Live Arena**: [bv7x.ai/bets](https://bv7x.ai/bets)
+- **Live Arena**: [bv7x.ai/arena](https://bv7x.ai/arena)
 - **Leaderboard**: [bv7x.ai/compete](https://bv7x.ai/compete)
 - **Oracle Signal**: [bv7x.ai/api/bv7x/openclaw/signal](https://bv7x.ai/api/bv7x/openclaw/signal)
 - **$BV7X Token**: [Base](https://basescan.org/token/0xD88FD4a11255E51f64f78b4a7d74456325c2d8dC)
