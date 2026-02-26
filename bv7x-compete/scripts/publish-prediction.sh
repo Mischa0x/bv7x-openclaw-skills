@@ -54,7 +54,7 @@ echo ""
 resp=$(curl -sf -X POST "${BASE}/arena/bet" \
   -H "Authorization: Bearer ${api_key}" \
   -H "Content-Type: application/json" \
-  -d "{\"direction\":\"${DIRECTION}\",\"round_type\":\"daily\"}") || {
+  -d "{\"direction\":\"${DIRECTION}\",\"round_type\":\"weekly\"}") || {
   echo "Warning: prediction failed (window may be closed)"
   echo ""
   echo "Your API key: ${api_key}"

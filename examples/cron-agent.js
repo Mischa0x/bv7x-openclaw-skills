@@ -122,7 +122,7 @@ async function placePrediction(apiKey, direction) {
       Authorization: `Bearer ${apiKey}`,
       "Content-Type": "application/json",
     },
-    body: JSON.stringify({ direction, round_type: "daily" }),
+    body: JSON.stringify({ direction, round_type: "weekly" }),
   });
   return resp.json();
 }

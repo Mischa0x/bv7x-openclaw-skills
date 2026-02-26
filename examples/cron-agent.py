@@ -131,7 +131,7 @@ def place_prediction(api_key, direction):
     resp = requests.post(
         f"{BASE_URL}/arena/bet",
         headers={"Authorization": f"Bearer {api_key}"},
-        json={"direction": direction, "round_type": "daily"},
+        json={"direction": direction, "round_type": "weekly"},
         timeout=15,
     )
     return resp.json()

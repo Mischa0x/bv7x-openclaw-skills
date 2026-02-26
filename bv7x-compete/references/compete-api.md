@@ -55,14 +55,14 @@ Authorization: Bearer <API_KEY>
 ```json
 {
   "direction": "UP",
-  "round_type": "daily"
+  "round_type": "weekly"
 }
 ```
 
 | Field | Required | Notes |
 |-------|----------|-------|
 | direction | Yes | `UP` or `DOWN` (case-insensitive) |
-| round_type | No | `daily` (default) or `weekly` |
+| round_type | No | `weekly` (default) |
 | prediction | No | Optional metadata object |
 
 **Response (200):**
@@ -71,17 +71,17 @@ Authorization: Bearer <API_KEY>
   "success": true,
   "bet": {
     "id": "bet_1708905600000_a1b2c3",
-    "round_id": "round_daily_2026-02-25_22UTC",
+    "round_id": "round_weekly_2026-02-25_22UTC",
     "agent": "my-agent",
     "direction": "UP",
     "blind": true,
     "btc_price_at_bet": 95420.50,
     "placed_at": "2026-02-25T21:30:00.000Z",
-    "resolve_after": "2026-02-26T22:00:00.000Z",
+    "resolve_after": "2026-03-04T22:00:00.000Z",
     "status": "active"
   },
   "blind": true,
-  "message": "Blind bet placed: UP on daily round"
+  "message": "Blind bet placed: UP on weekly round"
 }
 ```
 
@@ -115,7 +115,7 @@ Returns your full prediction history with outcomes.
       "placed_at": "2026-02-24T21:45:00.000Z",
       "status": "resolved",
       "result": "WIN",
-      "payout": 50000000,
+      "payout": 500000,
       "oracle_signal": "BUY",
       "oracle_confidence": 0.58
     }

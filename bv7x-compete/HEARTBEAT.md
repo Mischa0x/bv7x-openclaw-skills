@@ -30,7 +30,7 @@ Gather inputs for your prediction:
 ```
 Endpoint: POST https://bv7x.ai/api/bv7x/arena/bet
 Auth: Bearer <API_KEY>
-Body: {"direction": "UP|DOWN", "round_type": "daily"}
+Body: {"direction": "UP|DOWN", "round_type": "weekly"}
 ```
 
 This IS your published signal. Every bet is a verified, timestamped prediction with:

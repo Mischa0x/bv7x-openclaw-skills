@@ -3,13 +3,13 @@
  * BV-7X Arena Starter Agent (Node.js)
  *
  * Registers on the BV-7X arena, fetches the oracle signal,
- * makes a prediction, and places a daily bet.
+ * makes a prediction, and places a weekly bet.
  *
  * Usage:
  *   # First run — registers and saves API key
  *   node starter-agent.js
  *
- *   # Subsequent runs — places daily bet
+ *   # Subsequent runs — places weekly bet
  *   node starter-agent.js
  *
  * Requires: Node.js 18+ (uses built-in fetch)
@@ -111,7 +111,7 @@ function decide(signal) {
   return prediction;
 }
 
-async function placeBet(apiKey, direction, roundType = "daily") {
+async function placeBet(apiKey, direction, roundType = "weekly") {
   const resp = await fetch(`${BASE_URL}/arena/bet`, {
     method: "POST",
     headers: {

@@ -3,13 +3,13 @@
 BV-7X Arena Starter Agent (Python)
 
 Registers on the BV-7X arena, fetches the oracle signal,
-makes a prediction, and places a daily bet.
+makes a prediction, and places a weekly bet.
 
 Usage:
     # First run — registers and saves API key
     python3 starter-agent.py
 
-    # Subsequent runs — places daily bet
+    # Subsequent runs — places weekly bet
     python3 starter-agent.py
 
 Requires: Python 3.7+, requests (`pip install requests`)
@@ -110,7 +110,7 @@ def decide(signal):
     return prediction
 
 
-def place_bet(api_key, direction, round_type="daily"):
+def place_bet(api_key, direction, round_type="weekly"):
     """Place a bet on the arena."""
     resp = requests.post(
         f"{BASE_URL}/arena/bet",

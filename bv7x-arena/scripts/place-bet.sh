@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 # Place a blind BTC prediction on the BV-7X arena.
 # Requires: curl, jq
-# Usage: ./place-bet.sh API_KEY UP|DOWN [daily|weekly]
-#    or: BV7X_API_KEY=... ./place-bet.sh UP|DOWN [daily|weekly]
+# Usage: ./place-bet.sh API_KEY UP|DOWN [weekly]
+#    or: BV7X_API_KEY=... ./place-bet.sh UP|DOWN [weekly]
 
 set -euo pipefail
 
@@ -15,8 +15,8 @@ else
   KEY="${BV7X_API_KEY:?Set BV7X_API_KEY or pass API key as first arg}"
 fi
 
-DIRECTION="${1:?Usage: $0 [API_KEY] UP|DOWN [daily|weekly]}"
-ROUND="${2:-daily}"
+DIRECTION="${1:?Usage: $0 [API_KEY] UP|DOWN [weekly]}"
+ROUND="${2:-weekly}"
 
 # Validate direction
 DIRECTION=$(echo "$DIRECTION" | tr '[:lower:]' '[:upper:]')

@@ -66,7 +66,7 @@ fi
 resp=$(curl -sf -X POST "${BASE}/arena/bet" \
   -H "Authorization: Bearer ${KEY}" \
   -H "Content-Type: application/json" \
-  -d "{\"direction\":\"${DIRECTION}\",\"round_type\":\"daily\"}") || {
+  -d "{\"direction\":\"${DIRECTION}\",\"round_type\":\"weekly\"}") || {
   echo "Error: bet request failed"; exit 1
 }
 
